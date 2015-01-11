@@ -1,4 +1,7 @@
 Test1::Application.routes.draw do
+  get "fun/show"
+  get "design_info/show"
+  get "news_video/show"
   get "news/show"
   get "home/index"
   resources :posts

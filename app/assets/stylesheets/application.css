@@ -28,8 +28,8 @@
 }
 
 #base{
- margin:30px auto;
- width: 1121px;
+ margin:26px auto;
+ width: 1050px;
  background-color: #D3D3D3;
 }
 
@@ -44,6 +44,16 @@
 
 #web_name_background{
  margin:0;
- height: 220px;
- background-image: url(denino.jpg);
+ height: 110px;
+ background-image: url(75.gif);
 }
+
+#menu{
+ marign:0px;
+ background-color:#00cc66;
+}
+
+#design_info{
+ width:280px;
+}
+

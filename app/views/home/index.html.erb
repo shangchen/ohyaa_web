@@ -1,5 +1,16 @@
-<p><%= link_to "news", news_show_path %></p>
-<br/>
+ <hr/>
+ <label id="read_me_flag" onmouseover="hidden_text.style.display='block';" onmouseout="hidden_text.style.display='none';">read me</label>
+ <hr/>
+
+ <div id="hidden_text">
+<table>
+  <tr>
+  <th><%= image_tag("lin.jpg")%></th>  
+  <th> <%=$read_me%></th>
+  </tr>
+ </table>
+ </div>
+
 <h1>take a break</h1>
 <br/>
 <h2>This moment is your life</h2>
@@ -22,4 +33,3 @@ This is your life, and you’ve got to fight for it. Fight for what’s right. F
 <h2>Behind every beautiful life, there has been some kind of pain.</h2>
 <p>You fall, you rise, you make mistakes, you live, you learn. You’re human, not perfect. You’ve been hurt, but you’re alive. Think of what a precious privilege it is to be alive – to breathe, to think, to enjoy, and to chase the things you love. Sometimes there is sadness in our journey, but there is also lots of beauty. We must keep putting one foot in front of the other even when we hurt, for we will never know what is waiting for us just around the bend。</p>
 
-<p><%= link_to "message borad", posts_path %></p>

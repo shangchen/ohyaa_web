@@ -14,19 +14,54 @@
 <div id="base">
  <div id="web_name_background">
  </div>
- 
- <hr/>
- <label id="read_me_flag" onmouseover="hidden_text.style.display='block';" onmouseout="hidden_text.style.display='none';">read me</label>
- <hr/>
 
- <div id="hidden_text">
- <p id="read_me"><%=$read_me%></p>
- </div>
-<%= yield %>
-
+<div id="menu">
 <hr/>
-<br/>
-<p>developing...</p>
+<table>
+<tr>
+
+	<th>
+		<%= link_to "home", home_index_path %>
+	</th>
+        <th>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+	</th>
+	<th>
+		<%= link_to "news", news_show_path %>
+	</th>
+        <th>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+	</th>
+	<th>
+		<%= link_to "news_video", news_video_show_path %>
+	</th>
+
+        <th>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+	</th>
+	<th>
+		<%= link_to "design_info", design_info_show_path %>
+	</th>
+
+        <th>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+	</th>
+	<th>
+		<%= link_to "fun", fun_show_path %>
+	</th>
+
+        <th>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+	</th>
+	<th>
+		<%= link_to "message board", posts_path %>
+	</th>
+</tr>
+</table>
+<hr/>
+</div>
+
+<%= yield %>
 <br/>
 <hr/>
 
