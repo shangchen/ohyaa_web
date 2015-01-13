@@ -4,7 +4,6 @@ class NewsController < ApplicationController
   end
 
   def get_news()
-  	require 'open-uri'
 	url='http://news.baidu.com/'
 	begin
 	  re=open(url).read

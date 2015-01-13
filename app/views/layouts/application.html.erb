@@ -8,9 +8,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body style="background-color: #eeeeee;">
+
 <div id="front">
 <%=$web_name%>
+<hr/>
 </div>
+
 <div id="base">
  <div id="web_name_background">
  </div>
@@ -24,41 +27,48 @@
 		<%= link_to "home", home_index_path %>
 	</th>
         <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+	</th>
+
+	<th>
+		<%= link_to "Cheng Du", chengdu_show_path %>
+	</th>
+        <th>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
 	</th>
 	<th>
 		<%= link_to "news", news_show_path %>
 	</th>
         <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
 	</th>
 	<th>
 		<%= link_to "news_video", news_video_show_path %>
 	</th>
 
         <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
 	</th>
 	<th>
 		<%= link_to "design_info", design_info_show_path %>
 	</th>
 
         <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
 	</th>
 
 	<th>
 		<%= link_to "IT info", it_info_show_path %>
 	</th>
         <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
 	</th>
 	<th>
 		<%= link_to "fun", fun_show_path %>
 	</th>
 
         <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
 	</th>
 	<th>
 		<%= link_to "message board", posts_path %>

@@ -1,4 +1,5 @@
 Test1::Application.routes.draw do
+  get "chengdu/show"
   get "it_info/show"
   get "fun/show"
   get "design_info/show"
