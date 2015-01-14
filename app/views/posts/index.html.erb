@@ -3,7 +3,7 @@
    if you have some words want to say, you can just left them by 'new one' button
 </p>
 
-  
+<div class="div_text">  
     <% @posts.reverse_each do |post| %>
  	<br/>
 	<br/>
@@ -15,8 +15,8 @@
     <% end %>
   
 
-
 <br/>
 <br/>
 
 <%= link_to 'New One', new_post_path %>
+</div>

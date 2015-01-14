@@ -15,7 +15,7 @@ class FunController < ApplicationController
 	    re1= $'.to_s 
 	    re1=~ /      <ul class="user" id="alist2">/
 	    re2 =  $`.to_s
-	    re3=re2.gsub(/<a href="/,'<a href="http://wx.paigu.com') 
+	    re3=re2.gsub(/<a href="/,'<a  target="_blank" href="http://wx.paigu.com') 
 	    re3.gsub(/<img/,'<img style="display:none;" ') 	    		
 	end
 

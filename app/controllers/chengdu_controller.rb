@@ -14,6 +14,8 @@ class ChengduController < ApplicationController
 	    re=~/<div class="list_v2">.*/
 	    re1= $'.to_s 
 	    re1=~ /<!-- end main  -->/
-	    re2 =  $`.to_s	
+	    re2 = '<div>'+ $`.to_s
+	    re3=re2.gsub('<a','<li><a')
+	    re3.gsub('a>','a></li>')
 	end
 end
