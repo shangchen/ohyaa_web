@@ -8,7 +8,7 @@ class FunController < ApplicationController
 			re1=Net::HTTP.get_response(URI(url))
 			re=re1.read_body
 	    rescue
-	      error_info='sorry,server not response'
+	      error_info='sorry,server not response,please try again later.'
 	      return error_info
 	    end
 	    re=~/<div class="bd" id="bd">.*/
