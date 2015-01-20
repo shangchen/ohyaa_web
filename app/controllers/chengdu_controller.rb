@@ -14,8 +14,13 @@ class ChengduController < ApplicationController
 	    re=~/<div class="list_v2">.*/
 	    re1= $'.to_s 
 	    re1=~ /<!-- end main  -->/
-	    re2 = '<div>'+ $`.to_s
-	    re3=re2.gsub('<a','<li><a')
-	    re3.gsub('a>','a></li>')
+	    re2 = '<div><div>'+ $`.to_s
+	    if re2 !~ /cd.bendibao.com/
+	       re3=re2.gsub('href="/news','href="http://cd.bendibao.com/news')
+            else
+	       re3=re2
+            end
+	    re4=re3.gsub('<a','<li><a')
+	    re4.gsub('a>','a></li>')
 	end
 end
