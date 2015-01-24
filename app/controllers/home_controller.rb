@@ -13,15 +13,8 @@ end
 	      error_info='have a good day~ !'
 	      return error_info
 	    end
-=begin	    
 	    re=~/<div class="separator" .*/
 	    re1= $'.to_s 
 	    re1=~ /<!-- AddThis Button END -->/
 	    re2 = '<div>'+ $`.to_s	
-=end
-            re=~/<div class="entry">.*/
-            re1= $'.to_s
-            re1=~ /<\/div><!-- END entry -->/
-	    
-            re2 = $`.to_s   
 	 end
