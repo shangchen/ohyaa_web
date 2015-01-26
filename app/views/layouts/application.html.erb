@@ -18,65 +18,69 @@
  <div id="web_name_background">
  </div>
 
-<div id="menu">
-<table>
-<tr>
+<div id="nav">
+    <ul class="nav-menu clearfix unstyled">
+      <li>
+        <a href="/home/index" class="three-d">
+          Home
+          <span class="three-d-box"><span class="front">Home</span><span class="back">Home</span></span>
+        </a>
+      </li>
+      <li>
+        <a href="/chengdu/show" class="three-d">
+          Cheng Du
+          <span class="three-d-box"><span class="front">Cheng Du</span><span class="back">Cheng Du</span></span>
+        </a>
+      </li>
+                  
+      <li>
+        <a href="#" class="three-d">
+          News
+          <span class="three-d-box"><span class="front">News</span><span class="back">News</span></span>
+        </a>
+        <ul class="clearfix unstyled drop-menu">
+          <li>
+            <a href="/news/show" class="three-d">
+              Text
+              <span class="three-d-box"><span class="front">Text</span><span class="back">Text</span></span>
+            </a>
+          </li>
+          <li><a href="/news_video/show" class="three-d">
+              Video
+              <span class="three-d-box"><span class="front">Video</span><span class="back">Video</span></span>
+            </a>
+          </li>
+        </ul>        
+      </li>
 
-	<th>
-		<%= link_to "home", home_index_path %>
-	</th>
-        <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
-	</th>
-
-	<th>
-		<%= link_to "Cheng Du", chengdu_show_path %>
-	</th>
-        <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
-	</th>
-	<th>
-		<%= link_to "news", news_show_path %>
-	</th>
-        <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
-	</th>
-	<th>
-		<%= link_to "news_video", news_video_show_path %>
-	</th>
-
-        <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
-	</th>
-	<th>
-		<%= link_to "design_info", design_info_show_path %>
-	</th>
-
-        <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
-	</th>
-
-	<th>
-		<%= link_to "IT info", it_info_show_path %>
-	</th>
-        <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
-	</th>
-	<th>
-		<%= link_to "fun", fun_show_path %>
-	</th>
-
-        <th>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp
-	</th>
-	<th>
-		<%= link_to "message board", posts_path %>
-	</th>
-</tr>
-</table>
-<hr/>
-</div>
-
+      <li>
+        <a href="/design_info/show" class="three-d">
+          Design Info
+          <span class="three-d-box"><span class="front">Design Info</span><span class="back">Design Info</span></span>
+        </a>
+      </li>
+      <li>
+        <a href="/it_info/show" class="three-d">
+          IT Info
+          <span class="three-d-box"><span class="front">IT Info</span><span class="back">IT Info</span></span>
+        </a>
+      </li>
+      <li>
+        <a href="/fun/show" class="three-d">
+          Fun
+          <span class="three-d-box"><span class="front">Fun</span><span class="back">Fun</span></span>
+        </a>
+      </li>
+      <li>
+        <a href="/posts" class="three-d">
+          Message board
+          <span class="three-d-box"><span class="front">Message board</span><span class="back">Message board</span></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+<hr />
+<br />
 <%= yield %>
 <br/>
 <hr/>
@@ -92,16 +96,6 @@
 <p><%= link_to "back to home",home_index_path %></p>
 </div>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49507355-1', 'ohyaa.herokuapp.com');
-  ga('send', 'pageview');
-
-</script>
 
 </body>
 </html>
