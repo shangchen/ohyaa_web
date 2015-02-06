@@ -31,6 +31,9 @@
  font-family:Comic Sans MS;
  
 }
+.en_text{
+	 font-family:Comic Sans MS;
+	}
 
 .h1c{
 	 font-family:Comic Sans MS;
@@ -44,6 +47,7 @@
  margin:35px auto;
  width: 1050px;
  background-color:#E0E0E0;
+  font-family:Comic Sans MS;
 }
 
 
@@ -80,7 +84,6 @@
   width:100%;
 }
 .nav-menu > li {
-	text-align:center
   display: inline;
   float:left;
   border-right:1px solid #94c0be;
