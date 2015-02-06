@@ -1,0 +1,2 @@
+module CyhotHelper
+end

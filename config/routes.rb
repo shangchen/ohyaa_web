@@ -1,4 +1,7 @@
 Test1::Application.routes.draw do
+  get "cyhot/show"
+  get "cyopps/show"
+  get "cystory/show"
   get "chengdu/show"
   get "it_info/show"
   get "fun/show"

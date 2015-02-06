@@ -32,11 +32,21 @@
  
 }
 
+.h1c{
+	 font-family:Comic Sans MS;
+	}
+#hhh{
+	height:70px;
+	background-color: #D0D0D0;
+	}
+
 #base{
  margin:35px auto;
  width: 1050px;
  background-color:#E0E0E0;
 }
+
+
 
 #web_name{
  color:	#000000;
@@ -70,6 +80,7 @@
   width:100%;
 }
 .nav-menu > li {
+	text-align:center
   display: inline;
   float:left;
   border-right:1px solid #94c0be;
@@ -78,6 +89,7 @@
   border-right: none;
 }
 .nav-menu li a {
+	text-align:center;
   color: #fff;
   display: block;
   text-decoration: none;
@@ -207,7 +219,6 @@
   text-align: left;
   line-height: 40px;
   font-size: 14px;
-  width: 100px;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
