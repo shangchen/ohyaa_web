@@ -1,4 +1,5 @@
 Test1::Application.routes.draw do
+  get "douban/show"
   get "cdleisure/show"
   get "cyhot/show"
   get "cyopps/show"

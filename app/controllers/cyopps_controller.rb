@@ -4,7 +4,6 @@ class CyoppsController < ApplicationController
   end
   
    def get_opps()
-   	require 'net/http'
 	    url='http://www.cyzone.cn/category/20/'
 	    begin
 			re1=Net::HTTP.get_response(URI(url))

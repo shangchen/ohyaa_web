@@ -3,7 +3,6 @@ class CdleisureController < ApplicationController
       @cdleisure=get_cdleisure
   end
    def get_cdleisure()
-   	require 'net/http'
 	    url='http://cd.bendibao.com/tour/chengduxiuxianwanle/'
 	    begin
 			re1=Net::HTTP.get_response(URI(url))

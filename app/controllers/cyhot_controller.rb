@@ -3,7 +3,6 @@ class CyhotController < ApplicationController
      @hot=get_cyhot
   end
    def get_cyhot()
-   	require 'net/http'
 	    url='http://www.cyzone.cn/'
 	    begin
 			re1=Net::HTTP.get_response(URI(url))

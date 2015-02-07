@@ -4,7 +4,6 @@ class CystoryController < ApplicationController
   end
 
    def get_story()
-   	require 'net/http'
 	    url='http://www.cyzone.cn/category/22/'
 	    begin
 			re1=Net::HTTP.get_response(URI(url))
