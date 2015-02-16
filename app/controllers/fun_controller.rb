@@ -3,7 +3,7 @@ class FunController < ApplicationController
 	@funs=get_fun()
   end
    def get_fun()
-	    url='http://wx.paigu.com/u11743/'   
+	    url='http://chuansong.me/account/lengtoo'   
 	    begin
 			re1=Net::HTTP.get_response(URI(url))
 			re=re1.read_body
@@ -11,12 +11,13 @@ class FunController < ApplicationController
 	      error_info='sorry,server not response,please try again later.'
 	      return error_info
 	    end
-	    re=~/<div class="bd" id="bd">.*/
+	    re=~/<div class="feed_body">.*/
 	    re1= $'.to_s 
-	    re1=~ /      <ul class="user" id="alist2">/
+	    re1=~ /<div id="hn12" style="display: none">/
 	    re2 =  $`.to_s
-	    re3=re2.gsub(/<a href="/,'<a  target="_blank" href="http://wx.paigu.com') 
-	    re3.gsub(/<img/,'<img style="display:none;" ') 	    		
+	    re3=re2.gsub('href="/','href="http://chuansong.me/') 
+	    re4=re3.gsub(/h2>/,'p>')  	   
+	    re4.gsub(/<span style="float:/,'<span style="display:none;float:') 		
 	end
 
 end
