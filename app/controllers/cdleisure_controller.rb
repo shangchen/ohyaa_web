@@ -16,8 +16,8 @@ class CdleisureController < ApplicationController
     
 	    re=~/<div class="bm_c  vk_xld ">.*/
 	    re1= $'.to_s 
-	    re1=~ /<div class="sd pph">/
-	    re2 = '<!--'+$`.to_s
+	    re1=~ /<div id="listloopbottom" class="area">/
+	    re2 = '<div><!--'+$`.to_s
 	    re3=re2.gsub('<img','<br> <img style="display:none"')
 	    re4=re3.gsub('<a href="','<a target="_blank" href="')	 
 		end	
