@@ -1,9 +1,11 @@
 class CdleisureController < ApplicationController
   def show
       @cdleisure=get_cdleisure
-  end
+  end	  
+      
    def get_cdleisure()
-	    url='http://cd.bendibao.com/tour/chengduxiuxianwanle/'
+   	require 'net/http'
+	    url='http://www.52ch.net/52chnews/'
 	    begin
 			re1=Net::HTTP.get_response(URI(url))
 			re=re1.read_body
@@ -11,17 +13,14 @@ class CdleisureController < ApplicationController
 	      error_info='sorry,server not response'
 	      return error_info
 	    end
-	    re=~/<div class="lh30 c_06c pad10lr ft14 clear">*/
+    
+	    re=~/<div class="bm_c  vk_xld ">.*/
 	    re1= $'.to_s 
-	    re1=~ /<ul class="paginator">/
-	    re2 =  "<div>"+$`.to_s	
-	    
-	    if re2 !~ /cd.bendibao.com/
-	       re3=re2.gsub('href="/tour','href="http://cd.bendibao.com/tour')
-            else
-	       re3=re2
-      end	    
+	    re1=~ /<div class="sd pph">/
+	    re2 = '<!--'+$`.to_s
+	    re3=re2.gsub('<img','<br> <img style="display:none"')
+	    re4=re3.gsub('<a href="','<a target="_blank" href="')	 
+		end	
 
-	end	
   
 end
