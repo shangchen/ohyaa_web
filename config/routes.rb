@@ -1,4 +1,5 @@
 Test1::Application.routes.draw do
+  get "it_news/show"
   get "infoq_video/show"
   get "douban/show"
   get "cdleisure/show"
