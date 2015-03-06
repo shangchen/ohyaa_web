@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 end
 
    def get_sentence()
-	    url='http://www.dailyenglishquote.com/'
+	    url='http://www.dailyenglishquote.com/?variant=zh-hans'
 	    begin
 			re1=Net::HTTP.get_response(URI(url))
 			re=re1.read_body
@@ -16,5 +16,5 @@ end
 	    re=~/<div class="separator" .*/
 	    re1= $'.to_s 
 	    re1=~ /<!-- AddThis Button END -->/
-	    re2 = '<div>'+ $`.to_s	
+	    re2 = '<div style="padding:16px;">'+ $`.to_s	
 	 end
